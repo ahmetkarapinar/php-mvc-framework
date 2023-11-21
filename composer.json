@@ -1,0 +1,26 @@
+{
+  "name": "ahmet/php_mvc_framework",
+  "type": "project",
+  "authors": [
+    {
+      "name": "ahmetkarapinar",
+      "email": "ahmetkarapinarr00@gmail.com"
+    }
+  ],
+  "require": {
+    "vlucas/phpdotenv": "^5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Framework\\": "src/Framework",
+      "App\\": "src/App"
+    },
+    "files": [
+      "src/App/Config/Routes.php",
+      "src/App/Config/Middleware.php"
+    ]
+  },
+  "scripts": {
+    "phpickle": "php cli.php"
+  }
+}
